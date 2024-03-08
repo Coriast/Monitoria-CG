@@ -20,23 +20,23 @@ void desenha(){
     /*
     glColor3f(0.0, 1.0, 1.0);
     
-    glBegin(GL_TRIANGLES);       //instruÃ§Ã£o que indica o tipo de primitiva que serÃ¡ desenhada. Nesse caso, triÃ¢ngulos.
-        glVertex2f( 0.0,  0.0);  //instruÃ§Ã£o que envia as coordenadas dos vÃ©rtices do triÃ¢ngulo
+    glBegin(GL_TRIANGLES);       //instrução que indica o tipo de primitiva que será desenhada. Nesse caso, triangulos.
+        glVertex2f( 0.0,  0.0);  //instrução que envia as coordenadas dos vértices do triangulo
         glVertex2f(-1.0, -1.0);  
         glVertex2f( 0.0, -1.0);
     glEnd();
     */
-    glColor3f(1.0, 1.0, 0.0);    //instruÃ§Ã£o que altera a cor corrente. glColor3f(R,G,B). R = vermelho, G = verde, B = azul
-    glBegin(GL_TRIANGLES);       //instruÃ§Ã£o que indica o tipo de primitiva que serÃ¡ desenhada. Nesse caso, triÃ¢ngulos.
+    glColor3f(1.0, 1.0, 0.0);    //instrução que altera a cor corrente. glColor3f(R,G,B). R = vermelho, G = verde, B = azul
+    glBegin(GL_TRIANGLES);       //instrução que indica o tipo de primitiva que será desenhada. Nesse caso, triangulos.
         glColor3f(1.0, 0.0, 0.0);
-        glVertex2f( 0.0,  0.0);  //instruÃ§Ã£o que envia as coordenadas dos vÃ©rtices do triÃ¢ngulo
+        glVertex2f( 0.0,  0.0);  //instrução que envia as coordenadas dos vértices do triangulo
         glColor3f(0.0, 1.0, 0.0);
         glVertex2f( 2.0,  0.0); 
         glColor3f(0.0, 0.0, 1.0);
         glVertex2f( 1.0,  1.0);
     glEnd();
     
-    glFlush();  //Todas as instruÃ§Ãµes anteriores apenas indicaram o que deve ser feito. Essa Ã© a ordem pra GPU redesenhar com as informaÃ§Ãµes enviadas
+    glFlush();  //Todas as instruções anteriores apenas indicaram o que deve ser feito. Essa é a ordem pra GPU redesenhar com as informações enviadas
 }
 
 int main(int argc, char** argv){
