@@ -44,6 +44,7 @@ void cursorPos_callback(GLFWwindow* win, double xpos, double ypos);
 int main()
 {
 	glfwInit();
+	glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
 
 	GLFWwindow* win = glfwCreateWindow(700, 700, "Vetores", NULL, NULL);
 	glfwMakeContextCurrent(win);
@@ -117,7 +118,7 @@ void desenha()
 	};
 
 	glBegin(GL_LINES);
-	glColor3f(144.f / 255, 12.f / 255, 63.f / 255);
+	glColor3f(144.f / 255, 212.f / 255, 255.f / 255);
 	glVertex3f(0.0f, 0.0f, 0.0f);
 	glVertex3f(vetorAB.x, vetorAB.y, 0.f);
 	glEnd();
